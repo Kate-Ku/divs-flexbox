@@ -133,9 +133,19 @@ body {
   width: 30%;
   justify-content: center;
   align-items: center;
-  margin: 1em 0;
+  padding: 1.25em;
 }
 
+.div-1, .div-2 {
+  border-right: #cacfd2 solid 1px;
+}
+
+@media (max-width: 767px) {
+  .div-1, .div-2, .div-3 {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 
 
 
