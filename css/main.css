@@ -115,6 +115,7 @@ body {
   justify-content: space-between;
   font-weight: 700;
   flex-flow: nowrap;
+  width: 100%;
 }
 
 .wrapper span {
@@ -140,10 +141,18 @@ body {
   border-right: #cacfd2 solid 1px;
 }
 
-@media (max-width: 767px) {
+@media all and (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-1, .div-2 {
+    border-right: none;
+  }
+
   .div-1, .div-2, .div-3 {
     width: 100%;
-    flex-direction: column;
   }
 }
 
